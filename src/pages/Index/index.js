@@ -4,7 +4,9 @@ import usePokemon from "../../hooks/usePokemon";
 import Style from "./index.module.scss";
 
 function Index() {
-  const { pokemon } = usePokemon();
+  const { pokemon, isLoading } = usePokemon();
+
+  if (isLoading) return <p>Loading....</p>;
 
   return (
     <div className={Style.content}>
