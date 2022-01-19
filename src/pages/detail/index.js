@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import usePokemon from "../../hooks/usePokemon";
+import Pokeball from "../../components/Pokeball";
 import Style from "./index.module.scss";
 
 function Detail() {
@@ -70,6 +71,7 @@ function Detail() {
           ))}
         </div>
       </div>
+      <Pokeball data={data} />
     </div>
   );
 }
