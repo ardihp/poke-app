@@ -10,8 +10,8 @@ function Header() {
         <Link to="/">
           <img src={Logo} alt="logo pokemon" className="logo" />
         </Link>
-        <Link to="/about" className="header-link">
-          <i className="icon fas fa-info" />
+        <Link to="/my-pokemon" className="header-link">
+          <i className="icon fas fa-briefcase" />
         </Link>
       </div>
     </div>
