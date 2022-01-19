@@ -6,12 +6,14 @@ import "../styles/Header.scss";
 function Header() {
   return (
     <div className="header">
-      <Link to="/">
-        <img src={Logo} alt="logo pokemon" className="logo" />
-      </Link>
-      <Link to="/about" className="header-link">
-        <i className="icon fas fa-info" />
-      </Link>
+      <div className="header-content">
+        <Link to="/">
+          <img src={Logo} alt="logo pokemon" className="logo" />
+        </Link>
+        <Link to="/about" className="header-link">
+          <i className="icon fas fa-info" />
+        </Link>
+      </div>
     </div>
   );
 }

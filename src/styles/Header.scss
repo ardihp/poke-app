@@ -1,34 +1,41 @@
 .header {
-  display: flex;
   position: sticky;
   top: 0;
-  align-items: center;
-  justify-content: space-between;
   background: white;
-  height: 70px;
-  padding: 0 20px;
-  box-shadow: 0 0 10px rgb(236, 236, 236);
+  z-index: 1029;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(230, 230, 230, 0.7);
 
-  .logo {
-    height: 30px;
-  }
-
-  .header-link {
+  .header-content {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 40px;
-    width: 40px;
-    border-radius: 100%;
-    transition: all 0.3s linear;
+    justify-content: space-between;
+    height: 70px;
+    max-width: 1024px;
+    padding: 0 20px;
+    margin: 0 auto;
 
-    &:hover {
-      background-color: rgba(245, 245, 245, 0.5);
+    .logo {
+      height: 30px;
     }
 
-    .icon {
-      font-size: 15px;
-      color: rgb(155, 155, 155);
+    .header-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      width: 40px;
+      border-radius: 100%;
+      transition: all 0.3s linear;
+
+      &:hover {
+        background-color: rgba(245, 245, 245, 0.5);
+      }
+
+      .icon {
+        font-size: 15px;
+        color: rgb(155, 155, 155);
+      }
     }
   }
 }
